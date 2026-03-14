@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SmartTools Hub</title>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6960552044877842"
-     crossorigin="anonymous"></script>
-  
+<!-- Google AdSense Code -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6960552044877842" crossorigin="anonymous"></script>
+
 <style>
 body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f172a;color:white}
 header{padding:20px;text-align:center;background:#020617}
@@ -21,6 +21,7 @@ input{padding:10px;border-radius:8px;border:none;margin-top:10px;width:100%}
 .result{margin-top:10px;font-weight:bold;color:#4ade80}
 .ad{background:#111827;border:2px dashed #334155;text-align:center;padding:25px;margin:20px 0;border-radius:10px}
 footer{text-align:center;padding:20px;background:#020617}
+a{color:#38bdf8;text-decoration:none}
 </style>
 </head>
 <body>
@@ -32,12 +33,20 @@ footer{text-align:center;padding:20px;background:#020617}
 <a href="#tools">Tools</a>
 <a href="#learn">Learn</a>
 <a href="#about">About</a>
+<a href="privacy.html">Privacy Policy</a>
 </nav>
 </header>
 
 <div class="container">
 
-<div class="ad">AdSense Ad Space</div>
+<!-- Top AdSense Banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6960552044877842"
+     data-ad-slot="1234567890"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 <section id="tools">
 
@@ -61,9 +70,36 @@ footer{text-align:center;padding:20px;background:#020617}
 <div class="result" id="motivationResult"></div>
 </div>
 
+<div class="card">
+<h2>🎲 Dice Roller</h2>
+<button onclick="rollDice()">Roll Dice</button>
+<div class="result" id="diceResult"></div>
+</div>
+
+<div class="card">
+<h2>🪙 Coin Flip</h2>
+<button onclick="flipCoin()">Flip Coin</button>
+<div class="result" id="coinResult"></div>
+</div>
+
+<div class="card">
+<h2>📏 BMI Calculator</h2>
+<input id="weight" placeholder="Weight (kg)">
+<input id="height" placeholder="Height (m)">
+<button onclick="calculateBMI()">Calculate BMI</button>
+<div class="result" id="bmiResult"></div>
+</div>
+
 </section>
 
-<div class="ad">AdSense Ad Space</div>
+<!-- Middle AdSense Banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6960552044877842"
+     data-ad-slot="1234567891"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 <section id="learn" class="card">
 <h2>📚 Learn Web Development</h2>
@@ -77,15 +113,22 @@ footer{text-align:center;padding:20px;background:#020617}
 
 <section id="about" class="card">
 <h2>About</h2>
-<p>This website provides free useful tools for students, developers and everyone. More tools coming soon!</p>
+<p>This website provides free useful tools for students, developers, and everyone. More tools coming soon!</p>
 </section>
 
-<div class="ad">AdSense Ad Space</div>
+<!-- Bottom AdSense Banner -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6960552044877842"
+     data-ad-slot="1234567892"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 
 </div>
 
 <footer>
-<p>© 2026 SmartTools Hub</p>
+<p>© 2026 SmartTools Hub | <a href="privacy.html">Privacy Policy</a></p>
 </footer>
 
 <script>
@@ -114,6 +157,27 @@ let quotes=[
 ]
 let q=quotes[Math.floor(Math.random()*quotes.length)]
 document.getElementById('motivationResult').innerText=q
+}
+
+function rollDice(){
+let result=Math.floor(Math.random()*6)+1
+document.getElementById('diceResult').innerText="Dice: "+result
+}
+
+function flipCoin(){
+let result=Math.random()<0.5?"Heads":"Tails"
+document.getElementById('coinResult').innerText="Coin: "+result
+}
+
+function calculateBMI(){
+let w=parseFloat(document.getElementById('weight').value)
+let h=parseFloat(document.getElementById('height').value)
+if(w>0 && h>0){
+let bmi=(w/(h*h)).toFixed(2)
+document.getElementById('bmiResult').innerText="BMI: "+bmi
+}else{
+document.getElementById('bmiResult').innerText="Enter valid values"
+}
 }
 </script>
 
