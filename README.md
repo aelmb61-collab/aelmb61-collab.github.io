@@ -1,2 +1,3 @@
 # smarttools-hub
 Free useful tools website (calculator, password generator, and more)
+enjoy it by using!
