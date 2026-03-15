@@ -1,186 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="google-site-verification" content="DKu-aQaGLfw5bc-bzxQsatJrTv_UBGEO4eLNKc9_YBw" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-adsense-account" content="ca-pub-6960552044877842">
-<title>SmartTools Hub</title>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="DKu-aQaGLfw5bc-bzxQsatJrTv_UBGEO4eLNKc9_YBw" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-adsense-account" content="ca-pub-6960552044877842">
+    <title>SmartTools Hub - Free Useful Online Tools</title>
 
-<!-- Google AdSense Code -->
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6960552044877842"
-     crossorigin="anonymous"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6960552044877842" crossorigin="anonymous"></script>
 
-<style>
-body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f172a;color:white}
-header{padding:20px;text-align:center;background:#020617}
-h1{margin:0}
-nav{display:flex;gap:15px;justify-content:center;margin-top:10px}
-nav a{color:#38bdf8;text-decoration:none;font-weight:bold}
-.container{max-width:1000px;margin:auto;padding:20px}
-.card{background:#1e293b;border-radius:12px;padding:20px;margin-bottom:20px}
-button{background:#38bdf8;border:none;padding:10px 15px;border-radius:8px;font-weight:bold;cursor:pointer}
-input{padding:10px;border-radius:8px;border:none;margin-top:10px;width:100%}
-.result{margin-top:10px;font-weight:bold;color:#4ade80}
-.ad{background:#111827;border:2px dashed #334155;text-align:center;padding:25px;margin:20px 0;border-radius:10px}
-footer{text-align:center;padding:20px;background:#020617}
-a{color:#38bdf8;text-decoration:none}
-</style>
+    <style>
+        :root {
+            --primary: #38bdf8;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --accent: #4ade80;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg-dark); color: var(--text-main); scroll-behavior: smooth; }
+        header { padding: 40px 20px; text-align: center; background: radial-gradient(circle, #1e293b 0%, #020617 100%); border-bottom: 2px solid var(--primary); }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        nav { display: flex; gap: 20px; justify-content: center; margin-top: 15px; }
+        nav a { color: var(--primary); text-decoration: none; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: var(--accent); }
+        
+        .container { max-width: 1100px; margin: auto; padding: 20px; }
+        
+        /* Grid Layout for Tools */
+        .tools-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px; }
+        
+        .card { background: var(--bg-card); border-radius: 15px; padding: 25px; transition: transform 0.3s, box-shadow 0.3s; border: 1px solid #334155; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.5); border-color: var(--primary); }
+        
+        h2 { margin-top: 0; color: var(--primary); display: flex; align-items: center; gap: 10px; }
+        p.desc { font-size: 0.9rem; color: #94a3b8; margin-bottom: 15px; }
+        
+        button { background: var(--primary); border: none; padding: 12px 20px; border-radius: 8px; font-weight: bold; cursor: pointer; width: 100%; transition: 0.2s; color: #020617; }
+        button:hover { background: var(--accent); transform: scale(1.02); }
+        
+        input { padding: 12px; border-radius: 8px; border: 1px solid #334155; margin-bottom: 10px; width: calc(100% - 26px); background: #0f172a; color: white; outline: none; }
+        input:focus { border-color: var(--primary); }
+        
+        .result { margin-top: 15px; padding: 10px; background: #020617; border-radius: 8px; text-align: center; font-weight: bold; color: var(--accent); min-height: 20px; border-left: 4px solid var(--accent); }
+        
+        footer { text-align: center; padding: 40px; background: #020617; margin-top: 50px; border-top: 1px solid #334155; }
+        .ad-space { margin: 30px 0; text-align: center; background: rgba(255,255,255,0.05); padding: 10px; border-radius: 10px; }
+    </style>
 </head>
 <body>
 
 <header>
-<h1>SmartTools Hub</h1>
-<p>Free useful tools for everyone</p>
-<nav>
-<a href="#tools">Tools</a>
-<a href="#learn">Learn</a>
-<a href="#about">About</a>
-</nav>
+    <h1>SmartTools Hub</h1>
+    <p>Premium Web Tools • Fast • Free • Secure</p>
+    <nav>
+        <a href="#tools">Tools</a>
+        <a href="#learn">Learn</a>
+        <a href="#about">About</a>
+    </nav>
 </header>
 
 <div class="container">
 
-<!-- Top AdSense Banner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6960552044877842"
-     data-ad-slot="1234567890"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <div class="ad-space">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6960552044877842" data-ad-slot="1234567890" data-ad-format="auto" data-full-width-responsive="true"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
-<section id="tools">
+    <section id="tools" class="tools-grid">
 
-<div class="card">
-<h2>🧮 Quick Calculator</h2>
-<input id="num1" placeholder="First number">
-<input id="num2" placeholder="Second number">
-<button onclick="calculate()">Add</button>
-<div class="result" id="calcResult"></div>
-</div>
+        <div class="card">
+            <h2>🧮 Calculator</h2>
+            <p class="desc">A simple addition tool for quick math.</p>
+            <input type="number" id="num1" placeholder="Enter first number">
+            <input type="number" id="num2" placeholder="Enter second number">
+            <button onclick="calculate()">Calculate Sum</button>
+            <div class="result" id="calcResult">Result: --</div>
+        </div>
 
-<div class="card">
-<h2>🔐 Password Generator</h2>
-<button onclick="generatePassword()">Generate Password</button>
-<div class="result" id="passwordResult"></div>
-</div>
+        <div class="card">
+            <h2>🔐 Secure Vault</h2>
+            <p class="desc">Generate high-security passwords instantly.</p>
+            <button onclick="generatePassword()">Generate Password</button>
+            <div class="result" id="passwordResult">Waiting...</div>
+        </div>
 
-<div class="card">
-<h2>💡 Daily Motivation</h2>
-<button onclick="motivate()">Get Motivation</button>
-<div class="result" id="motivationResult"></div>
-</div>
+        <div class="card">
+            <h2>📏 Health BMI</h2>
+            <p class="desc">Check your Body Mass Index (Metric).</p>
+            <input type="number" id="weight" placeholder="Weight (kg)">
+            <input type="number" id="height" placeholder="Height (meters)">
+            <button onclick="calculateBMI()">Analyze Health</button>
+            <div class="result" id="bmiResult">Result: --</div>
+        </div>
 
-<div class="card">
-<h2>🎲 Dice Roller</h2>
-<button onclick="rollDice()">Roll Dice</button>
-<div class="result" id="diceResult"></div>
-</div>
+        <div class="card">
+            <h2>🎲 Game Roller</h2>
+            <p class="desc">Random 6-sided dice for games and fun.</p>
+            <button onclick="rollDice()">Roll the Dice</button>
+            <div class="result" id="diceResult">--</div>
+        </div>
 
-<div class="card">
-<h2>🪙 Coin Flip</h2>
-<button onclick="flipCoin()">Flip Coin</button>
-<div class="result" id="coinResult"></div>
-</div>
+    </section>
 
-<div class="card">
-<h2>📏 BMI Calculator</h2>
-<input id="weight" placeholder="Weight (kg)">
-<input id="height" placeholder="Height (m)">
-<button onclick="calculateBMI()">Calculate BMI</button>
-<div class="result" id="bmiResult"></div>
-</div>
+    <div class="ad-space">
+        <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6960552044877842" data-ad-slot="1234567891" data-ad-format="auto"></ins>
+        <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
 
-</section>
-
-<!-- Middle AdSense Banner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6960552044877842"
-     data-ad-slot="1234567891"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-
-<section id="learn" class="card">
-<h2>📚 Learn Web Development</h2>
-<p>Learn HTML, CSS, JavaScript and start building websites and games.</p>
-<ul>
-<li>HTML builds the structure</li>
-<li>CSS makes it beautiful</li>
-<li>JavaScript makes it interactive</li>
-</ul>
-</section>
-
-<section id="about" class="card">
-<h2>About</h2>
-<p>This website provides free useful tools for students, developers, and everyone. More tools coming soon!</p>
-</section>
-
-<!-- Bottom AdSense Banner -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-6960552044877842"
-     data-ad-slot="1234567892"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <section id="learn" class="card" style="margin-top:40px;">
+        <h2>📚 Why Learning Web Dev Matters</h2>
+        <p>In 2026, building your own tools is a superpower. By mastering <strong>HTML, CSS, and JavaScript</strong>, you can turn any idea into a functional website. Our hub is built using these exact technologies to show you what is possible!</p>
+    </section>
 
 </div>
 
 <footer>
-<p>© 2026 SmartTools Hub | <a href="privacy-policy.html">Privacy Policy</a></p>
+    <p>© 2026 SmartTools Hub | <a href="privacy-policy.html" style="color:var(--primary)">Privacy Policy</a></p>
+    <p><small>Designed for performance and user privacy.</small></p>
 </footer>
 
 <script>
-function calculate(){
-let a=parseFloat(document.getElementById('num1').value)
-let b=parseFloat(document.getElementById('num2').value)
-document.getElementById('calcResult').innerText="Result: "+(a+b)
-}
+    function calculate(){
+        let a = parseFloat(document.getElementById('num1').value) || 0;
+        let b = parseFloat(document.getElementById('num2').value) || 0;
+        document.getElementById('calcResult').innerText = "Total: " + (a + b);
+    }
 
-function generatePassword(){
-let chars="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%"
-let pass=""
-for(let i=0;i<12;i++){
-pass+=chars[Math.floor(Math.random()*chars.length)]
-}
-document.getElementById('passwordResult').innerText=pass
-}
+    function generatePassword(){
+        let chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*";
+        let pass = "";
+        for(let i=0; i<16; i++){
+            pass += chars[Math.floor(Math.random() * chars.length)];
+        }
+        document.getElementById('passwordResult').innerText = pass;
+    }
 
-function motivate(){
-let quotes=[
-"Keep learning every day.",
-"Small progress is still progress.",
-"Your future depends on what you build today.",
-"Code. Learn. Build. Repeat.",
-"Dream big and start small."
-]
-let q=quotes[Math.floor(Math.random()*quotes.length)]
-document.getElementById('motivationResult').innerText=q
-}
+    function rollDice(){
+        let res = Math.floor(Math.random() * 6) + 1;
+        document.getElementById('diceResult').innerText = "You rolled a: " + res;
+    }
 
-function rollDice(){
-let result=Math.floor(Math.random()*6)+1
-document.getElementById('diceResult').innerText="Dice: "+result
-}
-
-function flipCoin(){
-let result=Math.random()<0.5?"Heads":"Tails"
-document.getElementById('coinResult').innerText="Coin: "+result
-}
-
-function calculateBMI(){
-let w=parseFloat(document.getElementById('weight').value)
-let h=parseFloat(document.getElementById('height').value)
-if(w>0 && h>0){
-let bmi=(w/(h*h)).toFixed(2)
-document.getElementById('bmiResult').innerText="BMI: "+bmi
-}else{
-document.getElementById('bmiResult').innerText="Enter valid values"
-}
-}
+    function calculateBMI(){
+        let w = parseFloat(document.getElementById('weight').value);
+        let h = parseFloat(document.getElementById('height').value);
+        if(w > 0 && h > 0){
+            let bmi = (w / (h * h)).toFixed(2);
+            let cat = bmi < 18.5 ? " (Underweight)" : bmi < 25 ? " (Healthy)" : " (Overweight)";
+            document.getElementById('bmiResult').innerText = "BMI: " + bmi + cat;
+        } else {
+            document.getElementById('bmiResult').innerText = "Please enter valid info";
+        }
+    }
 </script>
 
 </body>
